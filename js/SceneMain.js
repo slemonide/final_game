@@ -10,10 +10,10 @@ class SceneMain extends Phaser.Scene {
     });
     this.load.image("sprSand", "content/sprSand.png");
     this.load.image("sprGrass", "content/sprGrass.png");
+    this.load.image("wolf_down", "content/wolfdown.png");
   }
 
   create() {
-
     this.anims.create({
       key: "sprWater",
       frames: this.anims.generateFrameNumbers("sprWater"),
@@ -21,7 +21,7 @@ class SceneMain extends Phaser.Scene {
       repeat: -1
     });
 
-    this.chunkSize = 8;
+    this.chunkSize = 16;
     this.tileSize = 16;
     this.cameraSpeed = 10;
 
